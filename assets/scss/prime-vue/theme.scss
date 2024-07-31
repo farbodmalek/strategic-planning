@@ -1,0 +1,34 @@
+@import './variables';
+@import './_fonts';
+@import './_extensions';
+
+.table-action-btn {
+  border: unset;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: .75rem;
+  background-color: #74c9ad;
+  color: white;
+  &:hover {
+    background-color: #65af99;
+  }
+}
+
+.list-menu::before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #0e3d74;
+  right: 2.5rem;
+  border-right-style: dashed;
+  height: 80%;
+}
+
+.subMenu::before {
+  content: "";
+  position: absolute;
+  margin-top: 1rem;
+  border-bottom: 1px solid #0e3d74;
+  width: 2rem;
+  right: 0;
+  border-bottom-style: dashed;
+}
